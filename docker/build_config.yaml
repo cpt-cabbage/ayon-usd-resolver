@@ -1,0 +1,3 @@
+Houdini205_Py311_Linux:
+  COMPILEPLUGIN: "HouLinux/Houdini205_Py311_Linux"
+  HFS: "/opt/hfs20.5.584"

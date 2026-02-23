@@ -1,0 +1,14 @@
+services:
+  builder:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/workspace
+      - ../hfs20.5.584:/opt/hfs20.5.584:ro
+    environment:
+      - HFS=/opt/hfs20.5.584
+    working_dir: /workspace
+    stdin_open: true
+    tty: true
